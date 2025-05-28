@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Super Trunfo Valorant</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #eee;
+      text-align: center;
+      padding: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .carta {
+      width: 250px;
+      height: 350px;
+      border-radius: 10px;
+      margin: 20px auto;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      box-shadow: 0 0 10px #00ffcc;
+      color: white;
+    }
+    .carta-status {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      right: 10px;
+      background: rgba(0,0,0,0.6);
+      padding: 10px;
+      border-radius: 5px;
+      text-align: left;
+    }
+    .carta-subtitle {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-weight: bold;
+      font-size: 18px;
+      text-shadow: 0 0 5px #000;
+    }
+    .resultado-final {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 20px;
+      color: #00ffcc;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Super Trunfo Valorant</h1>
+
+  <div id="carta-jogador" class="carta"></div>
+
+  <button id="btnSortear" onclick="sortearCarta()">Sortear Carta</button>
+  <button id="btnJogar" onclick="jogar()" disabled>Jogar</button>
+
+  <div id="resultado"></div>
+
+  <div id="carta-maquina" class="carta"></div>
+
+  <script src="jogo.js"></script>
+
+</body>
+</html>
